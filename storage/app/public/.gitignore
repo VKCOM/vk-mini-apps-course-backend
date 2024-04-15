@@ -1,0 +1,5 @@
+*
+!.gitignore
+!restaurants/
+!dishes/
+!static/

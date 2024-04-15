@@ -1,0 +1,32 @@
+{
+    "listeners": {
+        "*:80": {
+            "pass": "routes"
+        }
+    },
+    "routes": [
+        {
+            "match": {
+                "uri": "!/index.php"
+            },
+            "action": {
+                "share": "/var/www/html/public$uri",
+                "response_headers": {
+                    "Access-Control-Allow-Origin": "*"
+                },
+                "fallback": {
+                    "pass": "applications/backend"
+                }
+            }
+        }
+    ],
+    "applications": {
+        "backend": {
+            "type": "php",
+            "working_directory": "/var/www/html",
+            "root": "/var/www/html/public/",
+            "script": "index.php",
+            "processes": {}
+        }
+    }
+}
