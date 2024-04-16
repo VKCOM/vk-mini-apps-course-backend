@@ -1,4 +1,4 @@
-*                       @VKCOM/VKApps
+*                       @VKCOM/vk-miniapp
 .github                 @VKCOM/vk-sec
 .github/dependabot.yml  @VKCOM/vk-sec
 .github/workflows/*     @VKCOM/vk-sec
