@@ -10,7 +10,7 @@ updates:
       interval: 'daily'
     reviewers:
       - 'VKCOM/vk-sec'
-      - 'VKCOM/<team_service_user>'
+      - 'VKCOM/vk-miniapp'
 
   # next part can be used multiple times
   - package-ecosystem: 'composer'
@@ -21,4 +21,4 @@ updates:
       - dependency-type: 'direct'
     reviewers:
       - 'VKCOM/vk-sec'
-      - 'VKCOM/<team_service_user>'
+      - 'VKCOM/vk-miniapp'
