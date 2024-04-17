@@ -10,6 +10,10 @@ use App\Models\UserNotification;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Обработчик события для отправки push-уведомлений пользователю
+ */
 final class SendPushListener
 {
     public function __construct(

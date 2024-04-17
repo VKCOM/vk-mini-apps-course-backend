@@ -8,6 +8,10 @@ use App\Components\VkPay\VkPayService;
 use App\Events\OrderCanceled;
 use Illuminate\Support\Facades\Log;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Обработчик события возврата средств при оплате заказа
+ */
 class ReturnMoneyListener
 {
     public function __construct(private readonly VkPayService $vkPayService)

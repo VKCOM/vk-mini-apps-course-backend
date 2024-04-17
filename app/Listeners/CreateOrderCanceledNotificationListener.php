@@ -8,6 +8,10 @@ use App\Components\Notification\NotificationService;
 use App\Components\Notification\OrderWasCanceledNotificationFactory;
 use App\Events\OrderCanceled;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Обработчик события отмены заказа
+ */
 final class CreateOrderCanceledNotificationListener
 {
     public function __construct(

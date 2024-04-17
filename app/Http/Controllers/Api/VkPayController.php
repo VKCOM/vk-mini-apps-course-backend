@@ -12,6 +12,10 @@ use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Контроллер с api методами для обработки платежных уведомлений при плате vk pay
+ */
 class VkPayController extends Controller
 {
     public function getPaymentData(UserOrder $order, VkPayOrderFactory $vkPayOrderFactory, VkPayService $vkPayService): JsonResource

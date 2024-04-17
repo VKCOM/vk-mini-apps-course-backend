@@ -14,6 +14,10 @@ use App\Models\DonateItem;
 use App\Models\DonateOrder;
 use DateTimeImmutable;
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * Обработка подписочной оплаты голосами
+ */
 final class DonateSubscriptionPayment extends AbstractDonateProcessor
 {
     public function create(Donate $donate): DonateOrderInfo

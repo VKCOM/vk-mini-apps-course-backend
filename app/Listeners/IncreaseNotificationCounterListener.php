@@ -8,6 +8,10 @@ use App\Events\NotificationCreated;
 use App\Integrations\VK\Counter\ApiClient;
 use App\Models\VkUser;
 
+/**
+ * Модуль 4. Разработка, Урок 18. Счётчики и бейджи #M4L18
+ * Обработчик события создания уведомления, который устанавливает значение счётчика
+ */
 final class IncreaseNotificationCounterListener
 {
     public function __construct(private readonly ApiClient $apiService)

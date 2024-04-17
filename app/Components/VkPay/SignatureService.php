@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace App\Components\VkPay;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Сервис для формирования и проверки подписи для платежной формы при оплате vk pay
+ */
 final class SignatureService
 {
     public function __construct(private readonly string $signatureKey, private readonly string $merchanKey)

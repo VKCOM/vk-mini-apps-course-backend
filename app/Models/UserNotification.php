@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Сущность в базе данных - уведомления, для раздела уведомлений в мини-приложении
+ *
  * App\Models\UserNotification
  *
  * @property int $id

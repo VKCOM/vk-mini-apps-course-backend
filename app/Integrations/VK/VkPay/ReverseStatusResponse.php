@@ -2,6 +2,10 @@
 
 namespace App\Integrations\VK\VkPay;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Статус возврата средств vk pay
+ */
 final class ReverseStatusResponse
 {
     public function __construct(

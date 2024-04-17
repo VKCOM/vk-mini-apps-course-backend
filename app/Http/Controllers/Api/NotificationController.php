@@ -9,6 +9,10 @@ use App\Models\VkUser;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Контроллер с api методами для работы раздела уведомлений
+ */
 class NotificationController extends Controller
 {
     public function getUserNotifications(VkUser $vkUser): NotificationResourceCollection

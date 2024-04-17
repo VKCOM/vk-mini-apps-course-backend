@@ -7,6 +7,10 @@ namespace App\Factory;
 use App\Dto\VkPayTransaction;
 use App\Enums\VkPayCallbackStatusEnum;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Фабрика для создания DTO транзакций vk pay
+ */
 final class VkPayTransactionResultFactory
 {
     public function create(string $encodedData): VkPayTransaction

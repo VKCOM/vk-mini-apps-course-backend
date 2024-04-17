@@ -7,6 +7,12 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Авторизация запросов к серверу мини-приложения #M4L9
+ * Сервис проверки параметров запуска и проверки авторизации
+ * @see VkLaunchParamsService::isSigned  - проверка подписи параметров запуска
+ * @see VkLaunchParamsService::isExpired - проверка времени жизни токена
+ */
 class VkLaunchParamsService
 {
     public function __construct(

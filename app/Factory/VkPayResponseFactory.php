@@ -14,6 +14,10 @@ use App\Models\VkPayTransaction;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Фабрика для создания json ответов для vk pay
+ */
 final class VkPayResponseFactory
 {
     public function __construct(

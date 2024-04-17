@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Сущность в базе данных - транзакция оплаты заказа через vk pay
+ *
  * App\Models\VkPayTransaction
  *
  * @property int $id

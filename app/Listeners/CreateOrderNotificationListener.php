@@ -10,6 +10,10 @@ use App\Components\Notification\OrderWasDeliveredNotificationFactory;
 use App\Enums\UserOrderStatusEnum;
 use App\Events\OrderUpdated;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Обработчик событий отмены или заверения доставки заказа
+ */
 final class CreateOrderNotificationListener
 {
     public function __construct(

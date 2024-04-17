@@ -11,6 +11,10 @@ use App\Http\Resources\Donate\DonateProductResourceCollection;
 use App\Models\DonateItem;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * Контроллер с api методами для обработки платежных уведомлений при плате голосами
+ */
 class DonateController extends Controller
 {
     public function handle(DonateRequest $request, DonateResponseFactory $donateResponseFactory): JsonResource

@@ -11,6 +11,10 @@ use App\Enums\UserOrderStatusEnum;
 use App\Events\OrderUpdated;
 use App\Models\Achievement;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Обработчик события выдачи достижения за первый заказ в приложении
+ */
 final class CreateFirstOrderAchievementListener
 {
     public function __construct(
