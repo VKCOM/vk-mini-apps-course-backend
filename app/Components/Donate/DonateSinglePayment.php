@@ -11,6 +11,10 @@ use App\Enums\DonateRequestStatusEnum;
 use App\Models\DonateItem;
 use App\Models\DonateOrder;
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * Обработка разовой оплаты голосами
+ */
 final class DonateSinglePayment extends AbstractDonateProcessor
 {
     public function create(Donate $donate): DonateOrderInfo

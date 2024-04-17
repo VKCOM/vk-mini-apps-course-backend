@@ -4,6 +4,10 @@ namespace App\Dto;
 
 use Illuminate\Support\Str;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Авторизация запросов к серверу мини-приложения #M4L9
+ * Data Transfer Object: параметры запуска мини-приложения
+ */
 class VkLaunchParams
 {
     public readonly int $vk_user_id;

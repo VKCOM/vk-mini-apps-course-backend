@@ -7,6 +7,12 @@ namespace App\Integrations\VK\Push;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Класс для работы с push-уведомлениями через API VK
+ * @see ApiClient::isNotificationAllowed - проверка разрешения на отправку уведомления пользователю от мини-приложения
+ * @see ApiClient::send - отправка push-уведомления
+ */
 final class ApiClient
 {
     public function __construct(private readonly string $baseUrl, private readonly string $accessToken, private readonly int $appId)

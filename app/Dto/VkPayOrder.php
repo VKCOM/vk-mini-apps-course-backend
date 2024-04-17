@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace App\Dto;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Data Transfer Object: оплата заказа через vk pay
+ */
 final class VkPayOrder
 {
     public function __construct(

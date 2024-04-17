@@ -20,11 +20,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
-
 
 Route::middleware('auth:mini_app')->group(function () {
     Route::get('/dishes', [DishController::class, 'list']);
@@ -49,9 +44,21 @@ Route::middleware('auth:mini_app')->group(function () {
     Route::get('/users/{vkUser}/notifications', [NotificationController::class, 'getUserNotifications']);
     Route::post('/users/{vkUser}/notifications/mark-as-viewed', [NotificationController::class, 'markNotificationsAsViewed']);
 
+    /**
+     * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+     * API Route получения данных для платежной формы VKWebAppOpenPayForm
+     */
     Route::get('orders/{order}/vkpay-data', [VkPayController::class, 'getPaymentData']);
 });
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * API Route для callback оплаты голосами
+ */
 Route::any('/donate/vote/callback', [DonateController::class, 'handle']);
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * API Route для callback оплаты через vk pay (указывать в DMR)
+ */
 Route::any('/payments/vkpay/callback', [VkPayController::class, 'handleCallback']);

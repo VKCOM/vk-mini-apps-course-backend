@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Psy\Util\Json;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Класс для работы с API vk pay и DMR
+ */
 final class ApiClient
 {
     public function __construct(
@@ -19,6 +23,7 @@ final class ApiClient
         private readonly int $merchantId,
     ) {
     }
+
 
     public function makeRefund(string $transactionId, float $amount, string $reason = '', string $currency = 'RUB'): ReverseStatusResponse
     {

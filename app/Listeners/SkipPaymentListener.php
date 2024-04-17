@@ -6,6 +6,10 @@ use App\Enums\UserOrderStatusEnum;
 use App\Events\OrderUpdated;
 use App\Services\UserOrderService;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Обработчик события отключения оплаты vk pay (в демо выключена оплата)
+ */
 class SkipPaymentListener
 {
     public function __construct(private readonly UserOrderService $userOrderService)

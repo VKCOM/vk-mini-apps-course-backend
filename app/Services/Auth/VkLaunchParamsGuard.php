@@ -9,6 +9,10 @@ use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Авторизация запросов к серверу мини-приложения #M4L9
+ * Авторизация выполняется через механимз guard во фреймворке Laraverl.
+ */
 class VkLaunchParamsGuard implements Guard
 {
     private ?Authenticatable $currentUser = null;

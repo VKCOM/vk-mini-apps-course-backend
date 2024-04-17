@@ -11,6 +11,10 @@ use Carbon\Carbon;
 
 use function Symfony\Component\String\s;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Фабрика для создания уведомления о получении заказа
+ */
 final class OrderWasDeliveredNotificationFactory
 {
     private const TITLE = 'Заказ доставлен';

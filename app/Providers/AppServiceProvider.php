@@ -26,6 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
+        /**
+         * Модуль 4. Разработка, Урок 9. Авторизация запросов к серверу мини-приложения #M4L9
+         * Передача идентификатора мини-приложения и секретного ключа из конфигурации в сервис авторизации VkLaunchParamsService.
+         */
         $this->app->bind(VkLaunchParamsService::class, fn(): \App\Services\VkLaunchParamsService => new VkLaunchParamsService(
             appId: (int) Config::get('vk.app_id'),
             appSecret: (string) Config::get('vk.app_secret'),
@@ -43,6 +47,10 @@ class AppServiceProvider extends ServiceProvider
             appId: (int) Config::get('vk.app_id'),
         ));
 
+        /**
+         * Модуль 4. Разработка, Урок 18. Счётчики и бейджи #M4L18
+         * Передача в CounterApiClient сервисного токена и настроек для работы с API VK
+         */
         $this->app->bind(CounterApiClient::class, fn(): \App\Integrations\VK\Counter\ApiClient => new CounterApiClient(
             defaultUrl: (string) Config::get('vk.default_api_url'),
             accessToken: (string) Config::get('vk.service_key'),

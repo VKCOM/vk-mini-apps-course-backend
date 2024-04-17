@@ -6,6 +6,10 @@ namespace App\Dto;
 
 use App\Enums\VkPayCallbackStatusEnum;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Data Transfer Object: транзакция vk pay
+ */
 final class VkPayTransaction
 {
     public function __construct(

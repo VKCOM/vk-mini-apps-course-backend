@@ -8,6 +8,10 @@ use App\Enums\DonateRequestCancelReasonEnum;
 use App\Enums\DonateRequestStatusEnum;
 use App\Enums\DonatePaymentNotificationTypeEnum;
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * Data Transfer Object: оплата от пользователя и ее статус
+ */
 final class Donate
 {
     private readonly DonatePaymentNotificationTypeEnum $notificationType;

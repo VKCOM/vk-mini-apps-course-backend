@@ -10,6 +10,10 @@ use App\Models\UserOrder;
 use Carbon\Carbon;
 use Ramsey\Uuid\Uuid;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Фабрика для создания оплат заказов через vk pay
+ */
 final class VkPayOrderFactory
 {
     private const DEFAULT_CURRENCY = 'RUB';

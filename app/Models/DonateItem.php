@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * Сущность в базе данных - продукты для оплаты голосами
+ *
  * App\Models\PaymentItem
  *
  * @property int $id

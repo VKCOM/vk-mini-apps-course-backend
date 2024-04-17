@@ -10,6 +10,11 @@ use App\Dto\DonateOrderResult;
 use App\Enums\DonatePaymentNotificationTypeEnum;
 use App\Http\Requests\DonateRequest;
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * @see DonatePaymentService::verify  - Проверка подписи платежного уведомления
+ * @see DonatePaymentService::process - Обработка платежных уведомлений
+ */
 final class DonatePaymentService
 {
     public function __construct(private readonly DonateSinglePayment $donateOrderPayment, private readonly DonateSubscriptionPayment $donateSubscriptionPayment, private readonly string $appSecretKey)

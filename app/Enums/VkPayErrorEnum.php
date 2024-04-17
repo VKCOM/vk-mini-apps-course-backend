@@ -2,6 +2,10 @@
 
 namespace App\Enums;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Коды ошибок vk pay
+ */
 enum VkPayErrorEnum: string
 {
     case ERR_SYSTEM = 'ERR_SYSTEM';

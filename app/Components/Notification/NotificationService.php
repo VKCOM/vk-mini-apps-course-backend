@@ -7,6 +7,10 @@ namespace App\Components\Notification;
 use App\Events\NotificationCreated;
 use App\Models\UserNotification;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Сервис по работе с уведомлениями пользователей
+ */
 final class NotificationService
 {
     public function create(UserNotification $notification): void

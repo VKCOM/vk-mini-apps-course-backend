@@ -18,6 +18,10 @@ use App\Http\Resources\Donate\DonateSuccessSubscriptionResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Log;
 
+/**
+ * Модуль 7. Монетизация, Урок 5. Продажа виртуальных ценностей: разовая оплата и подписки #M7L5
+ * Класс для формирования JSON-ответов на платежные уведомления при оплате голосами
+ */
 final class DonateResponseFactory
 {
     private const SIGNE_ERROR_CODE = 10;

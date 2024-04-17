@@ -7,6 +7,10 @@ use App\Components\Notification\NotificationService;
 use App\Enums\AchievementsCodeEnum;
 use App\Events\AchievementReached;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Обработчик события выдачи достижений при добавлении в избранное ресторана, завершении 5 заказов или 8 заказов.
+ */
 final class CreateNotificationWhenAchievementReachedListener
 {
     public function __construct(

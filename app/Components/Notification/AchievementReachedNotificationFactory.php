@@ -9,6 +9,10 @@ use App\Enums\UserNotificationStatusEnum;
 use App\Models\UserNotification;
 use Carbon\Carbon;
 
+/**
+ * Модуль 4. Разработка, Урок 9. Уведомления #M4L13
+ * Фабрика для создания уведомления о получении достижения
+ */
 final class AchievementReachedNotificationFactory
 {
     private const ACTION_TITLE = 'Поделиться';

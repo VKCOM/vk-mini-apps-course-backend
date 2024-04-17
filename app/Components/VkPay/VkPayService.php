@@ -16,6 +16,10 @@ use App\Services\UserOrderService;
 use Carbon\Carbon;
 use Psy\Util\Json;
 
+/**
+ * Модуль 7. Монетизация, Урок 7. Продажа цифровых и физических товаров: реализация #M7L7
+ * Сервис для работы с оплатами заказов через vk pay
+ */
 final class VkPayService
 {
     public function __construct(
