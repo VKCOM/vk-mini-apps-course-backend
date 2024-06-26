@@ -13,7 +13,7 @@ use App\Models\DonateOrder;
  */
 abstract class AbstractDonateProcessor
 {
-    protected const DEFAULT_EXPIRATION = 3600;
+    protected const DEFAULT_EXPIRATION = 0;
 
     abstract public function create(Donate $donate): DonateOrderInfo;
 
